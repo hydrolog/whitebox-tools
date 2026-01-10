@@ -3,8 +3,8 @@ name: Build WhiteboxTools
 on:
   workflow_dispatch:
   # push:
-  #   branches:
-  #     - main  # Adjust to match your primary branch name
+    branches:
+      - main  # Adjust to match your primary branch name
 
 jobs:
   build:
