@@ -48,7 +48,7 @@ def build(do_clean=False, exclude_runner=False, create_zip_artifact=False):
     workspace_str = '[workspace]\nmembers = ["whitebox-common", "whitebox-lidar", "whitebox-plugins", "whitebox-raster", "whitebox-runner", "whitebox-tools-app", "whitebox-vector"]\n\n'
     if exclude_runner:
         # Exclude the runner if the second command line arg is set to True or if the platform is linux
-        workspace_str = '[workspace]\nmembers = ["whitebox-common", "whitebox-lidar", "whitebox-plugins", "whitebox-raster", "whitebox-tools-app", "whitebox-vector"]\n\n'
+        workspace_str = '[workspace]\nmembers = ["whitebox-common", "whitebox-lidar", "whitebox-plugins", "whitebox-raster", "whitebox-tools-app", "whitebox-vector"]\n resolver = "2"\n'
 
     with open('Cargo.toml', "w") as cargo_file:
         cargo_file.write(workspace_str)
